@@ -1,0 +1,299 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+body {
+	margin: 0;
+	padding: 0;
+	font-family: Arial, sans-serif;
+  height: 100vh;
+  background-image: linear-gradient(90deg, black 50%, white 50%);
+  font-family: 'Cairo', sans-serif, 'Kanit', sans-serif, 'Amiri', serif;
+}
+
+header {
+  background-image: linear-gradient(90deg, black 50%, white 50%);
+	color: #fff;
+	padding: 10px;
+  z-index: 9999;
+  width: 100%;
+  
+}
+
+nav {
+  background-image: linear-gradient(90deg, black 50%, white 50%);
+	padding: 10px;
+  width: 100%;
+}
+
+nav ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+nav ul li {
+	display: inline-block;
+	margin-right: 10px;
+}
+
+nav ul li a {
+	color: #fff;
+	text-decoration: none;
+  text-align: center;
+}
+
+main {
+	padding: 10px;
+}
+
+section {
+	margin-bottom: 20px;
+}
+
+section p,
+section h2 {
+  background-image: linear-gradient(90deg, rgb(14, 128, 235), rgb(45, 135, 209));
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transform;
+}
+
+h1, h2 {
+	margin: 0;
+}
+.inbox {
+  height: 70vh;
+}
+.content-box{
+  padding-top: 90px;
+}
+.content-box {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin: 0 auto;
+  height: 50px;
+}
+
+.input-container {
+  display: flex;
+}
+
+.grammaly {
+  flex: 1;
+  margin-right: 10px;
+}
+
+.grammaly textarea {
+  resize: none;
+  width: 100%;
+}
+
+.submit-btn {
+  background-image: linear-gradient(90deg, black, #889);
+  border: none;
+  color: white;
+  padding: 10px 22px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 30px;
+  transition-duration: 0.4s;
+  justify-content: flex-end;
+  height: 70px;
+  width: 70px;
+  cursor: pointer;
+}
+
+.submit-btn:hover {
+  background-color: rgb(0, 0, 209);
+  transform: scale(1.1);
+}
+
+img{
+  height: 30px;
+}
+footer {
+  background-image: linear-gradient(90deg, black 50%, white 50%);
+	color: #fff;
+	padding: 10px;
+	text-align: center;
+  padding-bottom: none;
+  width: 100%;
+}
+
+/* Start Login Section */
+
+.parent {
+  MARGIN: AUTO;
+    POSITION: RELATIVE;
+    OVERFLOW: HIDDEN;
+    margin-top: 286PX;
+    height: 385px;
+    width: 46.2vw;
+}
+
+.login {
+  background-color: #889;
+  height: 382px;
+  width: 46vw;
+  border-radius: 7px;
+  margin: auto auto auto auto;
+  position: relative;
+  top: 2px;
+  overflow: hidden;
+}
+
+.parent::before {
+  content: '';
+    width: 12%;
+    z-index: -1;
+    height: 773px;
+    background-image: linear-gradient(45deg, #1084e1, #2196f3);
+    position: absolute;
+    border-radius: 7px;
+    left: -97px;
+    bottom: 0;
+    animation: increase_Height 10s infinite linear;
+    bottom: 0;
+    transform: scale(1.2) rotate(2650deg) translateX(-50%);
+    left: 50%;
+    top: -126px;
+    animation: increase_Height 10s linear infinite;
+}
+
+
+
+.login .title  {
+  margin-bottom: 100px;
+}
+
+.login .title h3 {
+  transform: translateY(23px);
+  font-size: 24px;
+  position: relative;
+  color: transparent;
+  width: fit-content;
+  margin: auto;
+}
+
+
+.login .title h3::before {
+  content: attr(data-text);
+  position: absolute;
+  overflow: hidden;
+  color: white;
+  text-shadow: 0 0 3px  black;
+  border-right: 1px solid white;
+  width: 0;
+  animation: to-left 4s linear infinite;
+}
+
+.login .title h3::after {
+  content: attr(data-text);
+  position: absolute;
+  overflow: hidden;
+  color: white;
+  text-shadow: 0 0 3px  black;
+  border-right: 1px solid white;
+  width: 0;
+  left: 0;
+  animation: to-left 4s linear infinite;
+}
+
+.login form {
+  padding: 10px;
+}
+
+.login .content form input:not(:last-child) {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    margin:  0 0 25px 0;
+}
+
+.login .content form input:not(:last-child)::placeholder {
+  opacity: 1;
+  color: rgb(0, 0, 0);
+  font-weight: normal;
+}
+
+.login .content form input:last-child {
+    margin: auto;
+    border-radius: 7px;
+    border: none;
+    width: 130px;
+    margin-top: 10px;
+    color: #2196f3;
+    font-weight: bold;
+    background-image: linear-gradient(90deg, white 50%, black 50%);
+    padding: 6px;
+    font-size: 17px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.login .content form input:last-child:hover {
+  transform: scale(1.1);
+}
+
+.login form label {
+  color: white;
+  font-weight: normal;
+}
+
+input {
+  color: white;
+  font-weight: bold;
+}
+
+footer p {
+  background-image: linear-gradient(90deg, green 20%, blue 80%);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  font-weight: normal;
+}
+
+TEXTAREA {
+  FONT-SIZE: 16PX;
+  FONT-WEIGHT: BOLD;
+}
+
+.submit-btn {
+  margin: auto 0 21px auto !important;
+}
+
+/* End Login Section */
+
+
+/* Start Animation Section */
+
+@keyframes to-left {
+  10%,20%,30%,40%,50%,60%,70%,80% {
+    width: 100%;
+  }
+  90%,100% {
+    width: 0;
+  }
+} 
+
+@keyframes increase_Height {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(361deg);
+  }
+}
+
+/* End Animation Section */

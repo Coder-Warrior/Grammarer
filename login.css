@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+header ul {
+    display: flex;
+    position: absolute;
+    width: 100%;
+    top: 20px;
+    width: 200px;
+    left: 50%;
+    transform: translateX(-50%);
+    justify-content: center;
+}
+
+body {
+    font-family: 'Cairo', sans-serif, 'Kanit', sans-serif, 'Amiri', serif;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+header ul li  {
+    margin-left: 5px;
+}
+
+header ul li a {
+    color: #889;
+    font-size: 20px;
+}
